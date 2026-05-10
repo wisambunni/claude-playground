@@ -1,0 +1,80 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "160 cm",
+      "weight": "48 kg",
+      "goal": "maintain current weight while sustaining energy for daily training and competition",
+      "restrictions": "vegetarian, no nuts due to allergy"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals for one day",
+      "Meals are calorie-balanced to support training without weight gain",
+      "All meals respect vegetarian diet and nut-free requirements",
+      "Plan is concise and practical for a single athlete to prepare"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a sport requiring weight management (gymnast/dancer) with calorie-conscious meals that maintain energy while staying within specific weight targets"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "75 kg",
+      "goal": "Marathon training - high-intensity endurance athlete requiring 4000+ calories with carbohydrate loading and optimal hydration",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Total daily caloric intake meets or exceeds 4000 calories",
+      "Carbohydrates comprise 60-70% of total calories to support endurance performance",
+      "Includes hydration strategy with at least 3 liters of fluid intake throughout the day",
+      "Meal plan is formatted as a single day with distinct meals/snacks"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-intensity endurance athlete (marathon runner) requiring 4000+ calories with emphasis on carbohydrate loading and hydration"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "85 kg",
+      "goal": "Strength and power development for weightlifting competition in 8 weeks",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers all meals for one full day with strategic timing around workout",
+      "Protein intake is elevated (approximately 1.6-2.2g per kg bodyweight) and distributed across meals",
+      "Includes pre-workout and post-workout nutrition recommendations with specific timing",
+      "Macronutrient composition supports strength/power goals with balanced carbohydrates and healthy fats"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) needing balanced macronutrients with higher protein intake and strategic meal timing around workouts"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "72",
+      "goal": "Build muscle and improve endurance for competitive cycling",
+      "restrictions": "vegetarian, gluten-free"
+    },
+    "solution_criteria": [
+      "All meals are vegetarian and gluten-free with no animal products or gluten-containing ingredients",
+      "Plan includes adequate protein intake (~1.6-2.0g per kg body weight) from plant-based sources to support muscle building",
+      "Meals are compact and concise (brief descriptions), suitable for a single day"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with an athlete having multiple dietary restrictions (vegetarian + gluten-free) to verify the plan accommodates constraints while meeting nutritional needs"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "75 kg",
+      "goal": "Peak performance for 6 AM track competition (800m race)",
+      "restrictions": "Lactose intolerant, no nuts"
+    },
+    "solution_criteria": [
+      "Includes pre-dawn meal timed 2-3 hours before competition with easily digestible carbohydrates and protein",
+      "All meals respect lactose-free and nut-free restrictions",
+      "Plan is compact and covers only 1 day with clear timing for competition preparation"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with an early morning competition athlete requiring a pre-dawn meal plan with easily digestible foods and timing considerations for performance"
+  }
+]

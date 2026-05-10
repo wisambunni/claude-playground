@@ -1,17 +1,23 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from an S3 URI (e.g., s3://my-bucket/path/to/file.txt) and extract only the bucket name",
-    "format": "Regex",
-    "solution_criteria": "Must correctly extract the bucket name from various S3 URI formats (with and without trailing paths), handle different bucket naming conventions, and return only the bucket identifier"
+    "prompt_inputs": {},
+    "solution_criteria": [
+      "Handles empty/null inputs gracefully without crashing",
+      "Provides clear error message or appropriate fallback response"
+    ],
+    "task_description": "",
+    "scenario": "A scenario with empty or null input values to verify error handling and robustness"
   },
   {
-    "task": "Create a Python function that takes an AWS CloudWatch log event as input and returns the log message with timestamp and log level extracted separately",
-    "format": "Python",
-    "solution_criteria": "Function must parse the CloudWatch log event structure, correctly extract the message content, timestamp, and log level (if present), and return them as a dictionary with clear key-value pairs"
-  },
-  {
-    "task": "Generate a JSON object representing an AWS IAM policy statement that allows read-only access to objects in a specific S3 bucket",
-    "format": "JSON",
-    "solution_criteria": "Must be valid JSON with proper IAM policy structure, include appropriate actions for S3 read operations (GetObject, ListBucket), specify the correct resource ARN format for the bucket, and use the correct Effect (Allow)"
+    "prompt_inputs": {
+      "text": "The caf\u00e9's menu features: caf\u00e9 au lait (\u20ac4.50), cr\u00e8me br\u00fbl\u00e9e, na\u00efve interpretation, r\u00e9sum\u00e9 review, and Z\u00fcrich's finest. Special symbols: \u2122\u00ae\u00a9\u2103\u00b0\u2191\u2193\u2713\u2717\u2605\u2606\u2660\u2663\u2665\u2666 \ud83c\udf89\ud83c\udfa8\ud83c\udfad. Mathematical: \u2211\u220f\u222b\u2202\u2207\u2248\u2260\u00b1\u00d7\u00f7\u221e\u221a. Contact: info@caf\u00e9.com. Price: \u00a5500 or \u00a325 or \u20ac20. Encoding test: \u041f\u0440\u0438\u0432\u0435\u0442 \u043c\u0438\u0440 (Hello world), \u4f60\u597d\u4e16\u754c, \u0645\u0631\u062d\u0628\u0627 \u0628\u0627\u0644\u0639\u0627\u0644\u0645."
+    },
+    "solution_criteria": [
+      "Correctly identifies and preserves all Unicode characters including accented letters (\u00e9, \u00ef, \u00fc), currency symbols (\u20ac, \u00a5, \u00a3), mathematical operators (\u2211, \u222b, \u221e), emoji, and non-Latin scripts (Cyrillic, Chinese, Arabic)",
+      "Maintains proper encoding without garbling or replacing special characters with placeholders",
+      "Extracts email address and monetary values with their associated symbols intact"
+    ],
+    "task_description": "",
+    "scenario": "A scenario with special characters, Unicode symbols, or non-standard formatting to assess encoding and parsing capabilities"
   }
 ]
