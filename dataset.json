@@ -1,23 +1,17 @@
 [
   {
-    "prompt_inputs": {},
-    "solution_criteria": [
-      "Handles empty/null inputs gracefully without crashing",
-      "Provides clear error message or appropriate fallback response"
-    ],
-    "task_description": "",
-    "scenario": "A scenario with empty or null input values to verify error handling and robustness"
+    "task": "Create a Python function that extracts the AWS region from an S3 bucket ARN (e.g., 'arn:aws:s3:::my-bucket' or 'arn:aws:s3:us-west-2:123456789012:bucket/my-bucket')",
+    "format": "Python",
+    "solution_criteria": "Function should correctly parse S3 ARNs and return the region name. Should handle both path-style and virtual-hosted-style ARNs, returning 'us-east-1' or similar region codes, or 'global' if region is not specified."
   },
   {
-    "prompt_inputs": {
-      "text": "The caf\u00e9's menu features: caf\u00e9 au lait (\u20ac4.50), cr\u00e8me br\u00fbl\u00e9e, na\u00efve interpretation, r\u00e9sum\u00e9 review, and Z\u00fcrich's finest. Special symbols: \u2122\u00ae\u00a9\u2103\u00b0\u2191\u2193\u2713\u2717\u2605\u2606\u2660\u2663\u2665\u2666 \ud83c\udf89\ud83c\udfa8\ud83c\udfad. Mathematical: \u2211\u220f\u222b\u2202\u2207\u2248\u2260\u00b1\u00d7\u00f7\u221e\u221a. Contact: info@caf\u00e9.com. Price: \u00a5500 or \u00a325 or \u20ac20. Encoding test: \u041f\u0440\u0438\u0432\u0435\u0442 \u043c\u0438\u0440 (Hello world), \u4f60\u597d\u4e16\u754c, \u0645\u0631\u062d\u0628\u0627 \u0628\u0627\u0644\u0639\u0627\u0644\u0645."
-    },
-    "solution_criteria": [
-      "Correctly identifies and preserves all Unicode characters including accented letters (\u00e9, \u00ef, \u00fc), currency symbols (\u20ac, \u00a5, \u00a3), mathematical operators (\u2211, \u222b, \u221e), emoji, and non-Latin scripts (Cyrillic, Chinese, Arabic)",
-      "Maintains proper encoding without garbling or replacing special characters with placeholders",
-      "Extracts email address and monetary values with their associated symbols intact"
-    ],
-    "task_description": "",
-    "scenario": "A scenario with special characters, Unicode symbols, or non-standard formatting to assess encoding and parsing capabilities"
+    "task": "Create a JSON IAM policy document that allows a principal to read objects from a specific S3 bucket prefix (e.g., 's3:///logs/2024/*') while denying public access",
+    "format": "JSON",
+    "solution_criteria": "Valid IAM policy JSON with proper Statement structure, Effect, Action, Resource, and Principal fields. Should include s3:GetObject permission for the specific prefix and explicit Deny for public access conditions."
+  },
+  {
+    "task": "Create a regular expression that validates AWS EC2 instance IDs (format: 'i-' followed by 8 or 17 hexadecimal characters, e.g., 'i-0abcd1234efgh5678')",
+    "format": "Regex",
+    "solution_criteria": "Regex should match valid EC2 instance ID format with 'i-' prefix followed by exactly 8 or 17 hex characters. Should not match invalid formats like 'i-123' or 'i-0abcd1234efgh5678999'."
   }
 ]
